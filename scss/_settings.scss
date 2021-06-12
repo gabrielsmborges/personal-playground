@@ -1,0 +1,36 @@
+$primary-color: #3a655b;
+$secondary-color: #fffeec;
+$primary-color-dark: #1de9b6;
+$secondary-color-dark: #394549;
+$base-text-dark: white;
+$base-text: #383838;
+
+
+:root{
+    color-scheme: light dark;
+    @media (prefers-color-scheme: dark){
+        --primary-color: #{$primary-color-dark};
+        --secondary-color: #{$secondary-color-dark};
+        --base-text: #{$base-text-dark};
+    }
+    @media (prefers-color-scheme: light){
+        --primary-color: #{$primary-color};
+        --secondary-color: #{$secondary-color};
+        --base-text: #{$base-text};
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: "Krona One";
+    box-sizing: border-box;
+}
+
+
+$mobile-screen: 768px;
+$tablet-screen: 1024px;
+$laptop-screen: 1440px;
