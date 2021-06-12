@@ -1,12 +1,19 @@
 import * as React from "react"
-import { graphql, useStaticQuery } from 'gatsby'
-
-import BackgroundImage from 'gatsby-background-image'
+import '../../scss/index.scss'
 
 // markup
 const IndexPage = () => {
   return (
-    <h1>Portfolio page</h1>
+    <div className="index">
+      <div className="content">Content goes here</div>
+      <div className="right-nav">
+        <div className="links">
+          <a href="#">about me</a>
+          <a href="#">about me</a>
+          <a href="#">about me</a>
+        </div>
+      </div>
+    </div>
   )
 }
 
