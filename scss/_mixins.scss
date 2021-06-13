@@ -1,5 +1,17 @@
 @import "settings";
 
+@mixin darkTheme{
+    @media (prefers-color-scheme: dark){
+        @content;
+    }
+}
+
+@mixin lightTheme{
+    @media (prefers-color-scheme: light){
+        @content;
+    }
+}
+
 
 @mixin mobile{
     @media (max-width: #{$mobile-screen}){
