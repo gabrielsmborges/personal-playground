@@ -1,11 +1,17 @@
-import * as React from "react"
 import '../../scss/index.scss'
+import React from "react"
+import LogoWhite from "../components/icons/LogoWhite"
 
 // markup
 const IndexPage = () => {
   return (
     <div className="index">
-      <div className="content">Content goes here</div>
+      <div className="content">
+        <div className="logo-top-wrapper">
+          <LogoWhite className="logo"/>
+          <div>Gabriel Borges</div>
+        </div>
+      </div>
       <div className="right-nav">
         <div className="links">
           <a href="#">about me</a>

@@ -33,4 +33,29 @@
             display: none;
         }
     }
+
+    .content{
+        width: 100%;
+        .logo-top-wrapper{
+            font-size: 25px;
+            padding: 13px 35px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .logo{
+                height: 40px;
+                @include lightTheme{
+                    path{
+                        stroke: var(--primary-color);
+                    }
+                }
+
+                @include darkTheme{
+                    path{
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
 }
